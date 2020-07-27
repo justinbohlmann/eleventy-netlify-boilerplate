@@ -14,12 +14,14 @@ const Post = createClass({
           <h1>${entry.getIn(["data", "title"], null)}</h1>
           <p>
             <small>
-              <time>${
+              <time
+                >${
                   format(
                     entry.getIn(["data", "date"], new Date()),
                     "dd MMM, yyyy"
                   )
-                }</time>
+                }</time
+              >
               ${" by Author"}
             </small>
           </p>
